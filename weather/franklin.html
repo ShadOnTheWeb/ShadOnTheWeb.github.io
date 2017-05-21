@@ -7,12 +7,15 @@
 <meta name="description" content="weather information for Franklin">
 <meta name="viewport" content="width=device-width">
 <script type="text/JavaScript"></script>
+<link rel="stylesheet" type="text/css" href="styles.css" >
 </head>
 
 <body>
 <header>
-<h1>&#9856; &#9861; Feeling Lucky?</h1>
-<h3>Local Weather</h3>
+<div class="title">
+    <h1><span >&#9856;</span><span >&#9861;</span> Feeling Lucky?</h1>
+    <h1>Local Weather</h1>
+</div>
 <nav>
 <ul>
 <li><a href="../index.html">Home</a> </li>
@@ -24,28 +27,28 @@
 </nav>
 </header>
 <main>
-<section>
+<section id="current">
     <h2>&#9728; Current Conditions</h2>
-    <h2>Wind</h2>
-    <p>1-5 MPH Southwest</p>
-    <h2>Precipitation</h2>
-    <p>0in</p>
+    <div id="details">
+        <p>Wind: 1-5 MPH Southwest</p>
+        <p>Precipitation: 0in</p>
+    </div>
 </section>
-<section>
+<section id="temperature">
     <img src="none.html" alt="background">
     <h2>&#9728; Franklin, ID</h2>
     <div id="temp">
         <h2>74</h2>
-        <p>&#9728; 90/66</p>
+        <p id="high-low"><span>&#9728;</span> <span>90/66</span></p>
     </div>
-    <h2>Sunny</h2>
+<!--    <h2>Sunny</h2> -->
 </section>
-<section>
+<!-- <section>
     <h2>&#9728; Hourly Forecast</h2>
     <p>8:00 AM: 74</p>
     <p>9:00 AM: 77</p>
     <p>10:00 AM: 79</p>
-</section>
+</section> -->
 
 </main>
 <footer>

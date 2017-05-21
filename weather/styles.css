@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;    /* changes width property to total width instead of content width */
+
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+section,
+main,
+figcaption,
+figure {
+    display: block;   /* just in case we have any older browsers that don't recognize the HTML5 semantic elements */
+}
+
+body {
+    margin: 0;  /* remove any margin from body to avoid unsightly gaps. */
+    padding: 0;  /* ditto for padding  */
+    background-color: salmon;
+}
+/* cambios necesarios:
+-change typeface
+-right-align "Local Weather"
+-change font sizes
+-move nav bar to footer and make it horizontal
+-current conditions needs to go below franklin idaho section
+-center-align "Franklin, ID"
+-center-align its box and the "74" inside
+-space-between align the sun and the high/low
+-add a background
+-alignment of text in current conditions; change from header to normal text
+-remove hourly forecast
+*/
+
+main {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+#temperature {
+    order: -1;
+}
+
+
+nav ul {
+    display: flex;
+    line-height: 200%;
+    list-style-type: none;
+    justify-content: space-around;
+}
+
+nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.title h1 + h1 {
+    text-align: right;
+    margin-top: -.7em;
+}
+
+body {
+    padding-bottom: 50px;
+}
