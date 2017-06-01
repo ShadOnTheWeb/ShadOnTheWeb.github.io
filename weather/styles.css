@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Sansita');
+
 * {
     box-sizing: border-box;    /* changes width property to total width instead of content width */
 
@@ -20,25 +22,33 @@ body {
     padding: 0;  /* ditto for padding  */
     background-color: salmon;
 }
-/* cambios necesarios:
--change typeface
--right-align "Local Weather"
--change font sizes
--move nav bar to footer and make it horizontal
--current conditions needs to go below franklin idaho section
--center-align "Franklin, ID"
--center-align its box and the "74" inside
--space-between align the sun and the high/low
--add a background
--alignment of text in current conditions; change from header to normal text
--remove hourly forecast
-*/
+
+header, footer {
+    background-color: #A6D8DB;
+}
 
 main {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+    background-image: url("images/sunny-winter.jpg");
+    background-size: cover;
 }
+
+#temperature > h2 {
+    background-color: rgba(200,200,200,.6);
+    margin: .2em auto;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+#temp, #current {
+    background-color: rgba(200,200,200,.6);
+    margin: .2em auto;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
 
 #temperature {
     order: -1;
@@ -57,13 +67,61 @@ nav {
     bottom: 0;
     left: 0;
     right: 0;
+    background-color: #F07C6C;
 }
 
-.title h1 + h1 {
+.title h2 {
     text-align: right;
     margin-top: -.7em;
 }
 
 body {
     padding-bottom: 50px;
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Sansita", cursive, sans-serif;
+}
+
+h1 {
+    font-size: 35px;
+}
+
+h2, h3, h4, h5, h6 {
+    font-size: 20px;
+}
+
+nav a:link {
+    text-decoration: none;
+    color: #47556F;
+}
+
+nav a:visited {
+    color: #4A4653;
+}
+
+nav a:hover {
+    color: #E7EF61;
+}
+
+nav a:active {
+    color: #A6D8DB;
+}
+
+#die2 {
+    transform: rotate(25deg);
+    display: inline-block;
+}
+
+#currentdiv {
+    margin-left: 40px;
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+#currentheading {
+    text-align: left;
 }

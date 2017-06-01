@@ -1,0 +1,40 @@
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+
+}
+
+#top {
+    display: flex;
+    justify-content: center;
+}
+
+#image_scroller > * {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-image: url("http://loremflickr.com/g/320/240/paris");
+}
+
+.product_gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.products {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+}
+
+.ftr_img {
+    width: 30px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+}
