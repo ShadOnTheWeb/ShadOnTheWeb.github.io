@@ -42,7 +42,7 @@ main {
     border-radius: 5px;
 }
 
-#temp, #current {
+#temp, #current, .hidden, #hidden_section {
     background-color: rgba(200,200,200,.6);
     margin: .2em auto;
     border: 1px solid;
@@ -115,6 +115,10 @@ nav a:active {
     display: inline-block;
 }
 
+.hidden {
+    display: none;
+}
+
 #currentdiv {
     margin-left: 40px;
     margin-right: 40px;
@@ -124,4 +128,45 @@ nav a:active {
 
 #currentheading {
     text-align: left;
+}
+
+@media screen and (min-width: 34em) {
+    .title {
+        width: 20em;
+    }
+
+    nav {
+        position: static;
+    }
+
+    .hidden {
+        display: inline;
+        max-height: 12em;
+        overflow: auto;
+    }
+
+    main {
+        flex-direction: row;
+        align-items: stretch;
+
+    }
+    main > section {
+        flex: 1 0 30%;
+    }
+
+    #current {
+        order: -1;
+    }
+
+    #temperature {
+        display: flex;
+        flex-direction: column;
+    }
+
+    body {
+        width: 80%;
+        max-width: 800px;
+        margin: auto;
+    }
+
 }
