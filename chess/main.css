@@ -1,0 +1,35 @@
+#typography_font {
+    font: Helvetica;
+}
+
+#color1 {
+    background: white;
+}
+
+#color2 {
+    background: black;
+}
+
+#color3 {
+    background: #2b1807;
+}
+
+#color_table {
+    display: flex;
+    flex-direction: column;
+}
+
+.colors {
+    display: flex;
+    border: solid;
+}
+
+.color {
+    border-width: thick;
+    width: 300px;
+    height: 50px;
+}
+
+#wireframe {
+    width:25%;
+}
