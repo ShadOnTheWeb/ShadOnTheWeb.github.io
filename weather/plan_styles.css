@@ -1,0 +1,15 @@
+.colors {
+    height: 50px;
+}
+
+.arial_font {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.times_font {
+    "Times New Roman", Times, serif;
+}
+
+#wireframe {
+    width: 65%;
+}
