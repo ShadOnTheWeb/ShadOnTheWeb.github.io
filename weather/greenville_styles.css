@@ -1,0 +1,175 @@
+article,
+aside,
+footer,
+header,
+nav,
+section,
+main,
+figcaption,
+figure {
+    display: block;   /* just in case we have any older browsers that don't recognize the HTML5 semantic elements */
+}
+
+body {
+    margin: 0;  /* remove any margin from body to avoid unsightly gaps. */
+    padding: 0;  /* ditto for padding  */
+    background-color: #00184D;
+}
+
+header, footer {
+    background-color: #0F6F52;
+}
+
+main {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    background-image: url("images/sunny-winter.jpg");
+    background-size: cover;
+}
+
+#temperature > h2 {
+    background-color: rgba(200,200,200,.6);
+    margin: .2em auto;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+#temp, #current, .hidden, #hidden_section {
+    background-color: rgba(200,200,200,.6);
+    margin: .2em auto;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+nav ul {
+    display: flex;
+    line-height: 200%;
+    list-style-type: none;
+    justify-content: space-around;
+}
+
+nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #381219;
+}
+
+.title h2 {
+    text-align: right;
+    margin-top: -.7em;
+}
+
+body {
+    padding-bottom: 50px;
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 20px;
+}
+
+
+h2, h3, h4, h5, h6 {
+    font-size: 20px;
+}
+
+nav a:link {
+    text-decoration: none;
+    color: #47556F;
+}
+
+nav a:visited {
+    color: #4A4653;
+}
+
+nav a:hover {
+    color: #143E00;
+    font-weight: bolder;
+}
+
+nav a:active {
+    color: #A6D8DB;
+}
+
+#die2 {
+    transform: rotate(25deg);
+    display: inline-block;
+}
+
+
+#currentdiv {
+    margin-left: 40px;
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+#temp_and_hourly {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#currentheading {
+    text-align: left;
+}
+
+@media screen and (min-width: 34em) {
+    .title {
+        width: 20em;
+    }
+
+    nav {
+        position: static;
+    }
+
+    .hidden {
+        display: inline;
+        max-height: 12em;
+        overflow: auto;
+    }
+
+    main {
+        flex-direction: row;
+        align-items: stretch;
+
+    }
+    main > section {
+        flex: 1 0 30%;
+    }
+
+    #current {
+        order: -1;
+    }
+
+    #temperature {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #temp_and_hourly {
+        flex-direction: column;
+        margin-left: 120px;
+        margin-right: 120px;
+    }
+
+
+    body {
+        width: 80%;
+        max-width: 800px;
+        margin: auto;
+    }
+
+}
+
+body {
+    font-family: "Times New Roman", Times, serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 1.25em;
+}
