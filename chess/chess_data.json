@@ -1,0 +1,39 @@
+{"example": {
+    "array": [
+        1,
+        2,
+        3
+    ],
+    "boolean": true,
+    "null": null,
+    "number": 123,
+    "object": {
+        "a": "b",
+        "c": "d",
+        "e": "f"
+    },
+    "string": "Hello World"
+},
+
+ "chess1": {
+     "name": "The Game of the Century",
+     "concurrents": "Donald Byrne vs Robert James Fischer",
+     "date": "Oct. 17, 1956",
+     "tournament": "Third Rosenwald Trophy",
+     "result": "0-1",
+     "notation": [
+         "1. Nf3 Nf6", "2. c4 g6", "3. Nc3 Bg7", "4. d4 O-O", "5. Bf4 d5", "6. Qb3 dc4", "7. Qc4 c6", "8. e4 Nbd7", "9. Rd1 Nb6", "10. Qc5 Bg4", "11. Bg5 Na4!", "12. Qa3 Nc3", "13. bc3 Ne4", "14. Be7 Qb6", "15. Bc4 Nc3", "16. Bc5 Rfe8", "17. Kf1 Be6!!", "18. Bb6 Bc4", "19. Kg1 Ne2", "20. Kf1 Nd4", "21. Kg1 Ne2", "22. Kf1 Nc3", "23. Kg1 ab6", "24. Qb4 Ra4", "25. Qb6 Nd1", "26. h3 Ra2", "27. Kh2 Nf2", "28. Re1 Re1", "29. Qd8 Bf8", "30. Ne1 Bd5", "31. Nf3 Ne4", "32. Qb8 b5", "33. h4 h5", "34. Ne5 Kg7", "35. Kg1 Bc5", "36. Kf1 Ng3", "37. Ke1 Bb4", "38. Kd1 Bb3", "39. Kc1 Ne2", "40. Kb1 Nc3", "41. Kc1 Rc2#"
+     ]
+ },
+
+ "chess2": {
+     "name": "The Brilliancy Prize",
+     "concurrents": "Robert Eugene Byrne vs Robert James Fischer",
+     "date": "Dec. 18, 1963",
+     "tournament": "US Championship",
+     "result": "0-1",
+     "notation": [
+         "1. d4 Nf6", "2. c4 g6", "3. g3 c6", "4. Bg2 d5", "5. cd5 cd5", "6. Nc3 Bg7", "7. e3 O-O", "8. Nge2 Nc6", "9. O-O b6", "10. b3 Ba6", "11. Ba3 Re8", "12. Qd2 e5!", "13. de5 Ne5", "14. Rfd1 Nd3", "15. Qc2 Nf2!", "16. Kf2 Ng4", "17. Kg1 Ne3", "18. Qd2 Ng2!!", "19. Kg2 d4!", "20. Nd4 Bb7", "21. Kf1 Qd7 And White resigns."
+     ]
+ }
+}

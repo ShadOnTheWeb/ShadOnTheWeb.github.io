@@ -1,0 +1,27 @@
+(data.results[0].name/.url) - navigate through the object and get a certain part of it
+
+var shipListElement = document.getElementById('shiplist');   to get the list element
+first, check for children in the element and remove them.
+shipListElement.innerHTML = "";
+
+Looping through the ships:
+I can use a for each loop using this anonymous function method
+results.forEach(function(ship) {
+   function workspace
+});
+you want the url of the ship? ship.url
+
+eventually must build this: <li><a href="">ShipName</a></li> create element and set attribute
+
+link.innerHTML = ship.name;
+
+appending the child:
+listItem.appendChild(link);
+
+addthe list item to the list:
+ship.ListElement.appendChild(listItem);
+
+when it says link to the url, it means pull the info from that page. will discuss how on friday.
+
+grab any anchor inside a list item inside of shiplist:
+"#shiplist > li > a" is the query selector
