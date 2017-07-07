@@ -2,12 +2,19 @@
 <html lang="en-us">
     <head>
         <meta charset="UTF-8">
-        <title>Greenville | Feeling Lucky? | Local weather information</title>
+        <title id="title"> | Feeling Lucky? | Local weather information</title>
         <meta name="description" content="weather information for Greenville">
         <meta name="viewport" content="width=device-width">
-        <script type="text/JavaScript"></script>
         <link rel="stylesheet" type="text/css" href="greenville_styles.css" >
     </head>
+    <!-- *********************************************
+* Who Did You Collaborate With On This Assessment?
+* 1. Kaden Ashcraft
+* 2. Blaine Akers
+* 3.
+* 4.
+* 5.
+* ******************************************** -->
     <body>
         <header>
             <div class="title">
@@ -30,34 +37,35 @@
                     <div id="currentheading"><h2>&#9728; Current Conditions</h2>
                     </div>
                     <div id="details">
-                        <p>Wind: 1-5 MPH Southwest</p>
+                        <p id="wind"></p>
                         <br>
-                        <p>Precipitation: 0in</p>
+                        <p id="precipitation"></p>
                     </div>
                 </div>
             </div>
             <div id="temp_and_hourly">
-            <div id="temperature">
-                <h2>&#9728; Greenville, ID</h2>
-                <div id="temp">
-                    <h2>74</h2>
-                    <p id="high-low"><span>&#9728;</span> <span>90/66</span></p>
+                <div id="temperature">
+                    <h2 id="location"></h2>
+                    <div id="temp">
+                        <h2 id="temp_right_now"></h2>
+                        <p id="high-low"><span>&#9728;</span> <span id="high_low_text">90/66</span></p>
+                    </div>
+                    <h2 class="hidden" id="curr_condition">Sunny</h2>
                 </div>
-                <h2 class="hidden">Sunny</h2>
-            </div>
-            <div id="hidden_section">
-                <div class="hidden">
-                    <h2>&#9728; Hourly Forecast</h2>
-                    <p>8:00 AM: 74</p>
-                    <p>9:00 AM: 77</p>
-                    <p>10:00 AM: 79</p>
+                <div id="hidden_section">
+                    <div class="hidden">
+                        <h2>&#9728; Hourly Forecast</h2>
+                        <p id="1hr">8:00 AM: 74</p>
+                        <p id="2hr">9:00 AM: 77</p>
+                        <p id="3hr">10:00 AM: 79</p>
+                    </div>
                 </div>
-            </div>
             </div>
         </main>
         <footer>
             <span>Copyright</span>
             <span><a href="../index.html">Link to Homepage</a></span>
         </footer>
+        <script type="text/JavaScript" src="weather-home.js"></script>
     </body>
 </html>
