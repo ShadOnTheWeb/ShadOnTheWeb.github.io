@@ -37,10 +37,7 @@
         getJSON(url).then(function (data) {
             console.log(data);
             //add the code necessary here to update the page with all of the correct data points.
-            var newH1 = data.location.city + ", " + data.location.state + " - " + document.getElementById("cityDisplay").innerHTML;
-            console.log(newH1);
-
-            document.getElementById("cityDisplay").innerHTML = newH1;
+            document.getElementById("cityDisplay").innerHTML = data.location.city + ", " + data.location.state;
             var newTitle = data.location.city + ", " + data.location.state + " - " + document.getElementById("title").innerHTML;
             document.getElementById("title").innerHTML = newTitle;
 
