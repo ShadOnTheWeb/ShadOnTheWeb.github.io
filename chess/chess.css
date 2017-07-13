@@ -35,6 +35,10 @@ iframe {
 padding-left: 100px;
 }
 
+#knight_pic {
+    height: 400px;
+}
+
 
 .bio {
     display: flex;
