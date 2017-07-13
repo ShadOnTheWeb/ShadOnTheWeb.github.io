@@ -39,6 +39,7 @@ padding-left: 100px;
 .bio {
     display: flex;
     flex-direction: row;
+    padding-top: 105px;
 }
 
 .bio_p {
