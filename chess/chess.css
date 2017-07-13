@@ -5,7 +5,7 @@
 }
 
 iframe {
-    border: 6px solid #2b1807;
+    border: 2px solid #2b1807;
 }
 
 .navigation {
@@ -32,7 +32,6 @@ iframe {
 }
 
 .bio_img {
-height: 400px;
 padding-left: 100px;
 }
 
