@@ -1,43 +1,89 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Home Page | ShadOnTheWeb.github.io</title>
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width">
-    <meta name="description" content="Short description of the site">
-
-</head>
-<body>
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <title>King - Home | Chess | Learn to play the king chess piece</title>
+        <meta name="description" content="Information on chess and on the king.">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" type="text/css" href="chess/chess.css" >
+    </head>
+    <body>
         <header>
-            <h1>
-                ShadOnTheWeb - Home
-            </h1>
+            <nav>
+                <ul class="navbar">
+                    <li class="navigation"><a href="#"><img class="nav_img" src="chess/images/king.jpg" alt="king page"><span>King - Home</span></a></li>
+                    <li class="navigation"><a href="chess/queen.html"><img class="nav_img" src="chess/images/queen.jpg" alt="queen page"><span>Queen</span></a></li>
+                    <li class="navigation"><a href="chess/bishop.html"><img class="nav_img" src="chess/images/bishop.jpg" alt="bishop page"><span>Bishop</span></a></li>
+                    <li class="navigation"><a href="chess/knight.html"><img class="nav_img" src="chess/images/knight.jpg" alt="knight page"><span>Knight</span></a></li>
+                    <li class="navigation"><a href="chess/rook.html"><img class="nav_img" src="chess/images/rook.jpg" alt="rook page"><span>Rook</span></a></li>
+                    <li class="navigation"><a href="chess/pawn.html"><img class="nav_img" src="chess/images/pawn.jpg" alt="pawn page"><span>Pawn</span></a></li>
+                </ul>
+            </nav>
         </header>
-        <nav>
-            <p>ShadOnTheWeb</p>
-
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li>Link to Mobile Browsing Activity: <a href="mobile_browse/mobile.html" target="_blank">Mobile Browsing Activity</a></li>
-                <li><a href="weather/weather-plan.html">Weather Site Plan</a></li>
-                <li><a href="weather/greenville.html">Greenville</a></li>
-                <li><a href="weather/franklin.html">Franklin</a></li>
-                <li><a href="chess/chess_proposal_i.html">Chess Project Proposal II</a></li>
-                <li><a href="sandbox/responsive_navbar.html">Responsive Navbar</a></li>
-                <li><a href="swapi_activity/swapi_page.html">Star Wars API Activity</a></li>
-                <li><a href="jsonweather-html/index.html">JSON Weather Activity</a></li>
-                <li><a href="weather/index.html">Weather homepage</a></li>
-            </ul>
-        </nav>
         <main>
-            <h2>Home Page</h2>
-            <p>This page demonstrates how to build a basic web page.</p>
-
+            <div class="content">
+                <h1 class="page_heading">King - Home</h1>
+                <p>
+                    Welcome! Prepare to learn to play chess. If you are a beginner at chess, or if you need a refresher on how the game works, this site is for you. This site explains simply and concisely how to play the game, and the functions of each of the six pieces.
+                </p>
+                <h2>Proper board setup and gameplay:</h2>
+                <div class="img-ctr">
+                    <img src="chess/images/board.jpg" alt="board setup" class="chessboard" >
+                </div>
+                <p>Queens start on the square of their color, and each player should have a white square at the right-hand corner of his side of the board. White plays first. You may move one piece per turn.</p>
+                <h2>The King:</h2>
+                <p>
+                    The principal gamepiece is the king, who is the sovereign monarch and the commander in chief of your army. The objective of the game is to trap your opponent's king. While doing so, you must also protect your own king. An attack on the king is called a "check." When the king is in check, the defending player is required to either move the king to a square where he is no longer under attack, block the attack with another piece, or capture the attacking piece. The king is trapped, or "checkmated," when attacking pieces are positioned in such a way that the king is directly threatened by at least one attacking piece, there is no space for the king to move to that is not also under attack, the attack cannot be blocked, and the attacking piece cannot be captured. At checkmate, the game is over and the checkmating player wins. The king can move or attack one space per turn, in any direction. He may also perform a special move, called "castling," in combination with the rook, a useful strategic move for protecting the king. Castling is explained in further detail on the <a href="chess/rook.html">Rook</a> page.
+                </p>
+                <h2>King specifications:</h2>
+                <ul>
+                    <li>Point value: Priceless</li>
+                    <li>Movement/Attack range: 1, any direction</li>
+                    <li>Special move: Kingside or queenside castle</li>
+                    <li>Notation symbol: K</li>
+                </ul>
+                <h2>Notation:</h2>
+                <p>
+                    Now that I have introduced the king, a word on chess notation: Notation is the method used to record chess games for future reference and study. There is little variation in modern chess notation, known as Standard Algebraic Notation (SAN). A game is annotated by move. For example, the notation begins with move 1, then 2, then 3, and so on. Each move first references white's move, and then black's (see examples below). The move notation has two parts: the piece being moved, and its destination square. Each piece has a designated abbreviation to be used in notation (listed below), and each square on the board has a name. Specifically, the board is a grid with files (vertical lines) designated by number (1-8) and ranks (horizontal lines) designated by letter (a-h). The positioning is from white's perspective--that is, if you are the white player looking at the board, square a1 is the leftmost square on row nearest you. This all may sound confusing, but look at the example annotated game below and you will see that it is really quite straightforward. If you would like to see more annotated full games, visit the <a href="chess/pawn.html">Pawn</a> and <a href="chess/knight.html">Knight</a> pages.
+                </p>
+                <h2>Notation symbols:</h2>
+                <ul>
+                    <li>King: K or k</li>
+                    <li>Queen: Q or q</li>
+                    <li>Bishop: B or b</li>
+                    <li>Knight: N or n</li>
+                    <li>Rook: R or r</li>
+                    <li>Pawn: none (Pawns have no reference letter. If you see a move that just references the square, it means a pawn moved to that square. However, when a pawn captures, the letter of the square it moves from is referenced--for example, a pawn on a2 that captures a knight on b3 would be written as axb3 or ab3)</li>
+                    <li>Capture: an "x" is usually placed between the piece and the square to denote capture (i.e. kxe3), but it is not always used. </li>
+                    <li>Pawn promotion: The destination square is immediately followed by an equal sign "=" and then the letter of the piece the pawn has been promoted to.</li>
+                    <li>En passant: When a pawn moves en passant, the move is denoted as normal, as if the pawn attacked were on the square the attacking pawn moves to.</li>
+                    <li>Kingside castle: O-O</li>
+                    <li>Queenside castle: O-O-O</li>
+                </ul>
+                <h2>Notation ambiguity:</h2>
+                <p>
+                    Regular notation would sometimes leave doubt as to which piece was used to make a certain move. For the proper way to deal with these situations, I reference the PGN specification: "In the case of ambiguities (multiple pieces of the same type moving to the same square), the first appropriate disambiguating step of the three following steps is taken:
+                </p>
+                <ul>
+                    <li>"First, if the moving pieces can be distinguished by their originating files, the originating file letter of the moving piece is inserted immediately after the moving piece letter.</li>
+                    <li>"Second (when the first step fails), if the moving pieces can be distinguished by their originating ranks, the originating rank digit of the moving piece is inserted immediately after the moving piece letter.</li>
+                    <li>"Third (when both the first and the second steps fail), the two character square coordinate of the originating square of the moving piece is inserted immediately after the moving piece letter." (<a href="http://web.archive.org/web/20100528142843/http://www.very-best.de/pgn-spec.htm#8.2.3">http://web.archive.org/web/20100528142843/http://www.very-best.de/pgn-spec.htm#8.2.3</a>)</li>
+                </ul>
+                <h2>Notation example:</h2>
+                <p>Here is an annotated game, so that you can see what it looks like:</p>
+                <p>1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. O-O d6 5. b4 Bb4 6. c3 Ba5 7. d4 Bg4 8. Qb3 Qd7 9. Ng5 Nd8 10. de5 de5 11. Ba3 Nh6 12. f3 Bb6 13. Kh1 Bh5 14. Rd1 Qc8 15. Rd8 Qd8 16. Nf7 Qh4 17. Qb5 c6 18. Qe5 Kd7 19. Qe6 Kc7 20. Bd6#</p>
+                <p>(Captain William Davies Evans vs Alexander McDonnell, London, 1825)</p>
+            </div>
+            <div class="bio">
+                <img src="chess/images/fischer.jpg" alt="Bobby Fischer" class="bio_img">
+                <p class="bio_p">Bio: Robert James Fischer, USA, 1943-2008: Bobby Fischer was the greatest American chess player in history and might have been the most talented chess player ever to play the game. His career and legacy were marred by eccentricities that developed into what likely was full-blown mental illness that made him an exile from his country of birth that he represented in the greatest proxy battle of the Cold War and from the game he loved. <a href="http://www.imdb.com/name/nm1648139/bio#mini_bio">imdb.com</a></p>
+            </div>
         </main>
         <footer>
-            <small>Last Updated: 13 May 2017 <br>
-            &copy; 2017 ShadOnTheWeb</small>
+            <p>&copy;2017 ShadOnTheWeb</p>
+            <p><a href="hw.html">Homework Page</a></p>
+            <p><a href="chess/chess_proposal_i.html">Chess Proposal Page</a></p>
         </footer>
-</body>
+        <script type="text/JavaScript" src="chess/chess_script.js"></script>
+    </body>
 </html>
