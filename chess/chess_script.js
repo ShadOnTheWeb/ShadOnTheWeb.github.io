@@ -31,7 +31,7 @@ function fetchShips(chess) {
         }
         document.getElementById("bio_p").innerHTML = "Game notation: ";
         for (a=0; a<sub_results.notation.length; a++) {
-            document.getElementById("bio_p").innerHTML += sub_results.notation[a] + "  ";
+            document.getElementById("bio_p").innerHTML += sub_results.notation[a] + "   ";
         }
         });
 }
